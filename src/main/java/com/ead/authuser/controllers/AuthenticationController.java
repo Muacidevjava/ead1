@@ -27,7 +27,7 @@ public class AuthenticationController {
         if (userService.existByUsername(userDto.getUsername())) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Error: Username is already taken!");
         }
-        if (userService.existByEmail(userDto.getUsername())) {
+        if (userService.existByEmail(userDto.getEmail())) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Error: Email is already taken!");
         }
 
