@@ -19,7 +19,7 @@ spring:
         show_sql: true
 output:
   ansi:
-    enabled: ALWAYS
+    enabled: Always
 
 
 logging:

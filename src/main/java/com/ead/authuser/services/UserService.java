@@ -18,9 +18,9 @@ public interface UserService {
 
     void save(UserModel userModel);
 
-    boolean existByUsername(String username);
+    boolean existsByUsername(String username);
 
-    boolean existByEmail(String userEmail );
+    boolean existsByEmail(String userEmail );
 
     Page<UserModel> findAll(Specification<UserModel> spec,Pageable pageable);
 

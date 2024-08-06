@@ -39,12 +39,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean existByUsername(String username) {
+    public boolean existsByUsername(String username) {
         return userRepository.existsByUsername(username);
     }
 
     @Override
-    public boolean existByEmail(String username) {
+    public boolean existsByEmail(String username) {
         return userRepository.existsByEmail(username);
     }
 
